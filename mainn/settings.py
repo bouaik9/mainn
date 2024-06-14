@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+
 ]
 
 ROOT_URLCONF = 'mainn.urls'
