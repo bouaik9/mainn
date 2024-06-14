@@ -109,7 +109,7 @@ function submitField(element, field) {
   let id = document.querySelector(".entities-container").getAttribute("id");
 
   console.log(newValue);
-  fetch("/cv/" + id + "/" + field + "/", {
+  fetch("/" + id + "/" + field + "/", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

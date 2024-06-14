@@ -11,8 +11,6 @@ def home(request):
     return render(request, 'home.html')
 
 def loginform(request):
-    print(request.user.is_authenticated)
-    
     if request.user.is_authenticated:
     
         return redirect("home")
