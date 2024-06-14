@@ -25,7 +25,7 @@ SECRET_KEY = 'po-_u3tdz!fe)%-9tv6a)nf#mu9vepo)!htjnc5r^w9wokyi9p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mainn-production.up.railway.app']
 
 
 # Application definition
