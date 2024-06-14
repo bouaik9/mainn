@@ -1,0 +1,70 @@
+
+
+
+
+/* Apply basic styling to the table */
+table {
+  grid-column: span 2;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Apply styling to table header cells */
+th {
+  background-color: #23aaf2b7;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Apply styling to table data cells */
+td {
+  border: 1px solid #23aaf252;
+  padding: 8px;
+}
+
+/* Apply alternating background color to rows */
+tr:nth-child(even) {
+  background-color: #23aaf228;
+}
+tr:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        a {
+            color: inherit; /* Inherit text color */
+            text-decoration: none; /* Remove underline */
+            display: block; /* Make the link fill the entire cell */
+        }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pagination a{
+  text-decoration: none;
+  padding: 3px;
+  border: black solid 1px;
+  background-color: #f2f2f2;
+  font-size: 'Montserrat';
+  border-radius: 2px;
+  margin: 5px;
+  color: black;
+}
+
+
+.button-action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20;
+
+}
+button{
+    margin: 0 4px;
+    border: 2px solid #23a8f2;
+    background-color: white;
+    padding: 3px 15px;
+}

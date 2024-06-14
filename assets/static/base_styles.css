@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html, body {
+    min-height: 100vh; /* Ensure the body fills the entire viewport height */
+    margin: 0;
+    font-family: 'Poppins';
+    background: #eceffc;
+}
+
+html {
+    min-width: 500px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    margin: 0;
+    background-color: #23a8f2;
+    padding: 5px;
+}
+
+
+
+ul {
+
+    margin-left: auto; /* Pushes the list to the right */
+    margin-right: auto; /* Pushes the list to the left */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 400px;
+    align-items: center;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+.ulinks{
+    text-decoration: none; /* Remove default underline */
+    padding-left: 40px;
+    color:white;
+
+}
+
+.ulinks:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.log {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.log:hover {
+    background-color: white;
+    color: #007bff; /* Change color on hover */
+}
+
+.log a{
+    color: white;
+    text-decoration:  none;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------
+
+

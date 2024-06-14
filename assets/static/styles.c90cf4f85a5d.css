@@ -1,0 +1,66 @@
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    font-family: 'Poppins';
+}
+
+input{
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 38px;
+    border: 1px solid #007bff; /* Added border color */
+    font-weight: 100;
+
+}
+
+span{
+    
+    position: rel;
+    font-weight: 600; /* Making the text bold */
+    font-size: 40px;
+}
+
+.submit{
+    font-size: 17px;
+    font-family: 'Poppins';
+    margin-top: 10px;
+    padding: 5px 106px; 
+    max-width: 100%; 
+    background-color: #23a8f2; /* Added background color */
+    color: #fff; /* Added text color */
+    border: none; /* Removed border */
+    border-radius: 3px;
+    transition: box-shadow 0.3s ease; /* Added transition effect */
+}
+
+/* Hover effect */
+.submit:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Added box shadow when hovered */
+    cursor: pointer;
+}
+input:hover{
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Added box shadow when hovered */
+}
+a{
+    text-decoration: none;
+    color: #23a8f2;
+    
+}
+
+h4{
+    font-size: 13px;
+    font-weight: 100;
+}
