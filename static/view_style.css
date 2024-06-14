@@ -3,6 +3,25 @@
 
 
 /* Apply basic styling to the table */
+form{
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  flex-direction: row;
+  margin: 5px;
+}
+
+input{
+margin-right: 1%;
+padding: 5px;
+border-radius: 5px;
+border-color: #23aaf2b7;
+}
+form button{
+border: none;
+background-color: transparent;
+
+}
 table {
   grid-column: span 2;
   width: 100%;
@@ -37,23 +56,7 @@ tr:hover {
             display: block; /* Make the link fill the entire cell */
         }
 
-.pagination{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
 
-.pagination a{
-  text-decoration: none;
-  padding: 3px;
-  border: black solid 1px;
-  background-color: #f2f2f2;
-  font-size: 'Montserrat';
-  border-radius: 2px;
-  margin: 5px;
-  color: black;
-}
 
 
 .button-action{

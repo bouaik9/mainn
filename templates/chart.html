@@ -12,6 +12,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
+    
 }
 
 .chart-container {
@@ -29,6 +30,9 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin-right: 10px;
+
+    
 }
 
 h1 {
@@ -36,6 +40,7 @@ h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
+
 }
 
 .number {
@@ -49,6 +54,7 @@ h1 {
 .chart-container  {
     width: 100%; /* Set canvas width to 100% of its container */
     height: 500px; /* Set canvas height to 300 pixels */
+    margin-left: 10px;
 }
 
 
@@ -60,8 +66,8 @@ h1 {
         <canvas id="skillChart"></canvas>
     </div>
     <div class="stats-container">
-        <h1 class="number">Number of resumes: 40</h1>
-        <h1 class="last-upload">Last Upload: June 14, 2024, 7:18 a.m.</h1>
+        <h1 class="number">Number of resumes: {{number}}</h1>
+        <h1 class="last-upload">Last Upload: {{last_upload}}</h1>
     </div>
 </section>
 <script>

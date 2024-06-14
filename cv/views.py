@@ -210,3 +210,20 @@ def chart(request):
     number = Person.objects.count()
 
     return render(request, 'chart.html', context={"number":number, "last_upload":s.uploaded_at})
+
+
+
+def search_by_keyword(request):
+    keywords = request.GET.get('keywords', '')
+
+    keywords = [k.lower() for k in keywords.split()]
+    all_people = Person.objects.all()
+    matching_people = []
+
+    for person in all_people:
+        skills = person.skills.replace(',', ' ').lower().split()
+
+        if any(keyword in skills for keyword in keywords):
+            matching_people.append(person)
+          
+    return render(request, 'view.html', context={"data":matching_people})

@@ -12,6 +12,12 @@
 <link rel="stylesheet" href="{% static 'view_style.css' %}">
 
 <body>
+    <div class="search-container">
+        <form action="/search/" method="get">
+            <input type="text" name="keywords" placeholder="By skills">
+            <button type="submit"><img src="/static/search.png" alt="Search" width="30px" height="30px"></button>
+        </form>
+    </div>
 
 <section>
     <table>
