@@ -141,3 +141,4 @@ AUTH_USER_MODEL = 'authentication.CustomUser'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+CSRF_TRUSTED_ORIGINS = ['https://mainn-production.up.railway.app']
