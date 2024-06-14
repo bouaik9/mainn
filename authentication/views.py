@@ -25,7 +25,7 @@ def loginform(request):
         user = authenticate(username=email, password=password)
         if user:
             login(request, user)
-            return redirect('/cv/all/')
+            return redirect('/')
        
     return render(request, 'login.html', {"status":False})
 
@@ -39,11 +39,11 @@ def signupview(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         
-        user = CustomUser.objects.create_user(username=email, email=email, password=password,  last_name=last_name, first_name=first_name, is_admin=True)
+        user = CustomUser.objects.create_user(username=email, email=email, password=password,  last_name=last_name, first_name=first_name, is_admin=False)
         login(request, user)
 
         #request.session['account_created'] = True
-        return redirect('/cv/all/')
+        return redirect('/')
     return render(request, 'signup.html')
 
 
