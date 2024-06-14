@@ -174,8 +174,10 @@ def all_resume(request):
 
 
 def get_one_resume(request, id):
-    person = Person.objects.filter(id=id).get()
-    return render(request, 'result.html', context={"person":person, "id": person.id})
+    if request.user.is_authenticated:
+      person = Person.objects.filter(id=id).get()
+      return render(request, 'result.html', context={"person":person, "id": person.id})
+    return redirect('login')
 
 
 

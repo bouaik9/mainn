@@ -12,7 +12,7 @@ urlpatterns = [
 
     path("<id>/delete", remove_person),
     path("skills/", get_skills),
-    path("dashboard/", chart),
+    path("", chart),
 
     path("<id>/", get_one_resume, name="retreive"),
 
