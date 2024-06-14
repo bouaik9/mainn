@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<style>
+ section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.chart-container {
+    flex: 1;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.stats-container {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.number {
+    color: #007bff;
+}
+
+.last-upload {
+    color: #28a745;
+    font-style: italic;
+}
+.chart-container  {
+    width: 100%; /* Set canvas width to 100% of its container */
+    height: 500px; /* Set canvas height to 300 pixels */
+}
+
+
+
+</style>
+
+<section>
+    <div class="chart-container">
+        <canvas id="skillChart"></canvas>
+    </div>
+    <div class="stats-container">
+        <h1 class="number">Number of resumes: 40</h1>
+        <h1 class="last-upload">Last Upload: June 14, 2024, 7:18 a.m.</h1>
+    </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('http://127.0.0.1:8000/cv/skills/') // Change the URL to your API endpoint
+        .then(response => response.json())
+        .then(data => {
+            const d = JSON.parse(data)
+            const skills = d.skills;
+
+            // Count the occurrences of each skill
+            const skillCounts = {};
+            skills.forEach(skill => {
+                skillCounts[skill] = (skillCounts[skill] || 0) + 1;
+            });
+
+            // Extract skill names and counts
+            const labels = Object.keys(skillCounts);
+            const counts = Object.values(skillCounts);
+
+            // Generate random colors for each skill
+            const colors = generateRandomColors(labels.length);
+
+            // Create the chart
+            const ctx = document.getElementById('skillChart').getContext('2d');
+            const skillChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Skill Distribution',
+                        data: counts,
+                        backgroundColor:['rgba(255, 99, 132, 1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)','rgba(153, 102, 255, 1)','rgba(255, 159, 64, 1)'],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+});
+
+// Function to generate random colors
+function generateRandomColors(numColors) {
+    const colors = [];
+    for (let i = 0; i < numColors; i++) {
+        const color = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.5)`;
+        colors.push(color);
+    }
+    return colors;
+}
+
+</script>
+{% endblock %}

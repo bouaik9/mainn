@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+	{% endblock %}
+    <link rel="stylesheet" href="{% static 'base_styles.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="ulinks" href="/cv/dashboard/">Dashboard</a></li>
+            <li><a class="ulinks" href="/cv/upload/">Upload</a></li>
+            <li><a class="ulinks" href="/cv/all/">View Resumes</a></li>
+        </ul>
+        {% if request.session.authenticated %}
+        <button class="log"><a href="{% url 'logout' %}">Log Out</a></button>
+        {% endif %}
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>

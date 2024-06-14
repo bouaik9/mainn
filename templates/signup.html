@@ -1,0 +1,25 @@
+{%extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+
+
+<title>Sign up</title>
+	{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{%static 'styles.css' %}">
+    <div class="container">
+        <form action="{% url 'signup' %}" method="POST">
+            {% csrf_token %}
+            <span>Sign Up</span>
+            <input type="text" name="first_name" placeholder="first name">
+            <input type="text" name="last_name" placeholder="last name">
+
+
+            <input type="email" name="email" id="" placeholder="email">
+            <input type="password" name="password" id="" placeholder="password">
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock %}

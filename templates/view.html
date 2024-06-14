@@ -1,0 +1,64 @@
+{%extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+
+
+<title>view </title>
+	{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'view_style.css' %}">
+
+<body>
+
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                {% if request.session.is_admin == 1 %}
+                <th style="width: 20px;">Action</th> <!-- New column for action buttons -->
+                {% endif %}
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for d in data %}
+            <tr class="row" id="{{d.id}}">
+                <td><a href="/cv/{{d.id}}">{{d.name}} <img src="{% static 'link-icon.png' %}" alt="" width="15px"> </a></td>
+                <td><a href="/cv/{{d.id}}">{{d.email}}</a></td>
+                <td><a href="/cv/{{d.id}}">{{d.phone}}</a></td>
+                {% if request.session.is_admin == 1 %}
+                <td>
+                    <div class="button-action">
+                        <a href="/cv/{{d.id}}"><img src="{% static 'modify_icon.png' %}" alt="{% static 'modify_icon.png'}" style="width: 25px;"></a>
+                        <img src="{% static 'delete_icon.png' %}" alt="{% static 'delete_icon.png' %}" onclick="deleteRow(this)" style="width: 25px;">
+    
+                    </div>
+                    
+                </td> 
+                {% endif %}
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+</section>
+
+<script>
+    // Function to delete the row when the delete button is clicked
+    function deleteRow(button) {
+        var row = button.parentNode.parentNode.parentNode; // Get the parent row of the button
+        row.parentNode.removeChild(row); // Remove the row from the table
+        let id = document.querySelector(".row").getAttribute("id");
+        console.log(id);
+        fetch("/cv/"+id+"/delete", {
+            method:'GET'
+        });
+    }
+</script>
+{% endblock %}

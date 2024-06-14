@@ -1,0 +1,1250 @@
+,0
+0,technical skills
+1,ajenti
+2,django-suit
+3,django-xadmin
+4,flask-admin
+5,flower
+6,grappelli
+7,wooey
+8,algorithms
+9,pypattyrn
+10,python-patterns
+11,sortedcontainers
+12,django-simple-captcha
+13,django-simple-spam-blocker
+14,django-compressor
+15,django-pipeline
+16,django-storages
+17,fanstatic
+18,fileconveyor
+19,flask-assets
+20,jinja-assets-compressor
+21,webassets
+22,audiolazy
+23,audioread
+24,beets
+25,dejavu
+26,django-elastic-transcoder
+27,eyed3
+28,id3reader
+29,m3u8
+30,mingus
+31,pyaudioanalysis
+32,pydub
+33,pyechonest
+34,talkbox
+35,timeside
+36,tinytag
+37,authomatic
+38,django-allauth
+39,django-oauth-toolkit
+40,flask-oauthlib
+41,oauthlib
+42,python-oauth2
+43,python-social-auth
+44,rauth
+45,sanction
+46,jose
+47,pyjwt
+48,python-jws
+49,python-jwt
+50,bitbake
+51,buildout
+52,platformio
+53,pybuilder
+54,scons
+55,django-cms
+56,djedi-cms
+57,feincms
+58,kotti
+59,mezzanine
+60,opps
+61,plone
+62,quokka
+63,wagtail
+64,widgy
+65,beaker
+66,diskcache
+67,django-cache-machine
+68,django-cacheops
+69,django-viewlet
+70,dogpile.cache
+71,hermescache
+72,johnny-cache
+73,pylibmc
+74,errbot
+75,coala
+76,code2flow
+77,pycallgraph
+78,flake8
+79,pylama
+80,pylint
+81,mypy
+82,asciimatics
+83,cement
+84,click
+85,cliff
+86,clint
+87,colorama
+88,docopt
+89,gooey
+90,python-fire
+91,python-prompt-toolkit
+92,aws-cli
+93,bashplotlib
+94,caniusepython3
+95,cookiecutter
+96,doitlive
+97,howdoi
+98,httpie
+99,mycli
+100,pathpicker
+101,percol
+102,pgcli
+103,saws
+104,thefuck
+105,try
+106,python-future
+107,python-modernize
+108,six
+109,opencv
+110,pyocr
+111,pytesseract
+112,simplecv
+113,eventlet
+114,gevent
+115,multiprocessing
+116,threading
+117,tomorrow
+118,uvloop
+119,config
+120,configobj
+121,configparser
+122,profig
+123,python-decouple
+124,cryptography
+125,hashids
+126,paramiko
+127,passlib
+128,pynacl
+129,blaze
+130,orange
+131,pandas
+132,cerberus
+133,colander
+134,jsonschema
+135,schematics
+136,valideer
+137,voluptuous
+138,altair
+139,bokeh
+140,ggplot
+141,matplotlib
+142,pygal
+143,pygraphviz
+144,pyqtgraph
+145,seaborn
+146,vispy
+147,pickledb
+148,pipelinedb
+149,tinydb
+150,zodb
+151,mysql
+152,mysql-python
+153,mysqlclient
+154,oursql
+155,pymysql
+156,postgresql
+157,psycopg2
+158,queries
+159,txpostgres
+160,apsw
+161,pymssql
+162,nosql
+163,cassandra-python-driver
+164,happybase
+165,plyvel
+166,py2neo
+167,pycassa
+168,pymongo
+169,redis-py
+170,telephus
+171,txredis
+172,arrow
+173,chronyk
+174,dateutil
+175,delorean
+176,moment
+177,pendulum
+178,pytime
+179,pytz
+180,when.py
+181,ipdb
+182,pdb++
+183,pudb
+184,remote-pdb
+185,wdb
+186,line_profiler
+187,memory_profiler
+188,profiling
+189,vprof
+190,caffe
+191,keras
+192,mxnet
+193,neupy
+194,pytorch
+195,tensorflow
+196,theano
+197,ansible
+198,cloud-init
+199,cuisine
+200,docker
+201,fabric
+202,fabtools
+203,honcho
+204,openstack
+205,pexpect
+206,psutil
+207,saltstack
+208,supervisor
+209,dh-virtualenv
+210,nuitka
+211,py2app
+212,py2exe
+213,pyinstaller
+214,pynsist
+215,sphinx
+216,awesome-sphinxdoc
+217,mkdocs
+218,pdoc
+219,pycco
+220,s3cmd
+221,s4cmd
+222,you-get
+223,youtube-dl
+224,alipay
+225,cartridge
+226,django-oscar
+227,django-shop
+228,merchant
+229,money
+230,python-currencies
+231,forex-python
+232,shoop
+233,emacs
+234,elpy
+235,sublime
+236,anaconda
+237,sublimejedi
+238,vim
+239,jedi-vim
+240,python-mode
+241,youcompleteme
+242,ptvs
+243,visual
+244,python
+245,magic
+246,liclipse
+247,pycharm
+248,spyder
+249,envelopes
+250,flanker
+251,imbox
+252,inbox.py
+253,lamson
+254,marrow
+255,modoboa
+256,nylas
+257,yagmail
+258,pipenv
+259,p
+260,pyenv
+261,venv
+262,virtualenv
+263,virtualenvwrapper
+264,imghdr
+265,mimetypes
+266,path.py
+267,pathlib
+268,python-magic
+269,unipath
+270,watchdog
+271,cffi
+272,ctypes
+273,pycuda
+274,swig
+275,deform
+276,django-bootstrap3
+277,django-crispy-forms
+278,django-remote-forms
+279,wtforms
+280,cytoolz
+281,fn.py
+282,funcy
+283,toolz
+284,curses
+285,enaml
+286,flexx
+287,kivy
+288,pyglet
+289,pygobject
+290,pyqt
+291,pyside
+292,pywebview
+293,tkinter
+294,toga
+295,urwid
+296,wxpython
+297,cocos2d
+298,panda3d
+299,pygame
+300,pyogre
+301,pyopengl
+302,pysdl2
+303,renpy
+304,django-countries
+305,geodjango
+306,geoip
+307,geojson
+308,geopy
+309,pygeoip
+310,beautifulsoup
+311,bleach
+312,cssutils
+313,html5lib
+314,lxml
+315,markupsafe
+316,pyquery
+317,untangle
+318,weasyprint
+319,xmldataset
+320,xmltodict
+321,grequests
+322,httplib2
+323,requests
+324,treq
+325,urllib3
+326,ino
+327,keyboard
+328,mouse
+329,pingo
+330,pyro
+331,pyuserinput
+332,scapy
+333,wifi
+334,hmap
+335,imgseek
+336,nude.py
+337,pagan
+338,pillow
+339,pybarcode
+340,pygram
+341,python-qrcode
+342,quads
+343,scikit-image
+344,thumbor
+345,wand
+346,clpython
+347,cpython
+348,cython
+349,grumpy
+350,ironpython
+351,jython
+352,micropython
+353,numba
+354,peachpy
+355,pyjion
+356,pypy
+357,pysec
+358,pyston
+359,stackless
+360,interactive
+361,bpython
+362,jupyter
+363,ptpython
+364,babel
+365,pyicu
+366,apscheduler
+367,django-schedule
+368,doit
+369,gunnery
+370,joblib
+371,plan
+372,schedule
+373,spiff
+374,taskflow
+375,eliot
+376,logbook
+377,logging
+378,sentry
+379,metrics
+380,nupic
+381,scikit-learn
+382,spark
+383,vowpal_porpoise
+384,xgboost
+385,pyspark
+386,luigi
+387,mrjob
+388,streamparse
+389,dask
+390,python(x
+391,y)
+392,pythonlibs
+393,pythonnet
+394,pywin32
+395,winpython
+396,gensim
+397,jieba
+398,langid.py
+399,nltk
+400,pattern
+401,polyglot
+402,snownlp
+403,spacy
+404,textblob
+405,mininet
+406,pox
+407,pyretic
+408,sdx
+409,asyncio
+410,diesel
+411,pulsar
+412,pyzmq
+413,twisted
+414,txzmq
+415,napalm
+416,django-activity-stream
+417,stream-framework
+418,django
+419,sqlalchemy
+420,awesome-sqlalchemy
+421,orator
+422,peewee
+423,ponyorm
+424,pydal
+425,python-sql
+426,pip
+427,conda
+428,curdling
+429,pip-tools
+430,wheel
+431,warehouse
+432,bandersnatch
+433,devpi
+434,localshop
+435,carteblanche
+436,django-guardian
+437,django-rules
+438,delegator.py subprocesses for
+439,sarge
+440,sh
+441,celery
+442,huey
+443,mrq
+444,rq
+445,simpleq
+446,annoy
+447,fastfm
+448,implicit
+449,libffm
+450,lightfm
+451,surprise
+452,tensorrec
+453,django-rest-framework
+454,django-tastypie
+455,flask
+456,eve
+457,flask-api-utils
+458,flask-api
+459,flask-restful
+460,flask-restless
+461,pyramid
+462,cornice
+463,falcon
+464,hug
+465,restless
+466,ripozo
+467,sandman
+468,apistar
+469,simplejsonrpcserver
+470,simplexmlrpcserver
+471,zerorpc
+472,astropy
+473,bcbio-nextgen
+474,bccb
+475,biopython
+476,cclib
+477,networkx
+478,nipy
+479,numpy
+480,obspy
+481,pydy
+482,pymc
+483,rdkit
+484,scipy
+485,statsmodels
+486,sympy
+487,zipline
+488,simpy
+489,django-haystack
+490,elasticsearch-dsl-py
+491,elasticsearch-py
+492,esengine
+493,pysolr
+494,solrpy
+495,whoosh
+496,marshmallow
+497,apex
+498,python-lambda
+499,zappa
+500,tablib
+501,marmir
+502,openpyxl
+503,pyexcel
+504,python-docx
+505,relatorio
+506,unoconv
+507,xlsxwriter
+508,xlwings
+509,xlwt / xlrd
+510,pdf
+511,pdfminer
+512,pypdf2
+513,reportlab
+514,markdown
+515,mistune
+516,python-markdown
+517,yaml
+518,pyyaml
+519,csvkit
+520,unp
+521,cactus
+522,hyde
+523,lektor
+524,nikola
+525,pelican
+526,tinkerer
+527,django-taggit
+528,genshi
+529,jinja2
+530,mako
+531,hypothesis
+532,mamba
+533,nose
+534,nose2
+535,pytest
+536,robot
+537,unittest
+538,green
+539,tox
+540,locust
+541,pyautogui
+542,selenium
+543,sixpack
+544,splinter
+545,doublex
+546,freezegun
+547,httmock
+548,httpretty
+549,mock
+550,responses
+551,vcr.py
+552,factory_boy
+553,mixer
+554,model_mommy
+555,mimesis
+556,fake2db
+557,faker
+558,radar
+559,chardet
+560,difflib
+561,ftfy
+562,fuzzywuzzy
+563,levenshtein
+564,pangu.py
+565,pyfiglet
+566,pypinyin
+567,shortuuid
+568,unidecode
+569,uniout
+570,xpinyin
+571,slugify
+572,awesome-slugify
+573,python-slugify
+574,unicode-slugify
+575,parser
+576,phonenumbers
+577,ply
+578,pygments
+579,pyparsing
+580,python-nameparser
+581,python-user-agents
+582,sqlparse
+583,apache-libcloud
+584,boto3
+585,django-wordpress
+586,facebook-sdk
+587,facepy
+588,gmail
+589,google-api-python-client
+590,gspread
+591,twython
+592,furl
+593,purl
+594,pyshorteners
+595,short_url
+596,webargs
+597,moviepy
+598,scikit-video
+599,wsgi-compatible
+600,bjoern
+601,fapws3
+602,gunicorn
+603,meinheld
+604,netius
+605,paste
+606,rocket
+607,uwsgi
+608,waitress
+609,werkzeug
+610,haul
+611,html2text
+612,lassie
+613,micawber
+614,newspaper
+615,opengraph
+616,python-goose
+617,python-readability
+618,sanitize
+619,sumy
+620,textract
+621,cola
+622,demiurge
+623,feedparser
+624,grab
+625,mechanicalsoup
+626,portia
+627,pyspider
+628,robobrowser
+629,scrapy
+630,bottle
+631,cherrypy
+632,awesome-django
+633,awesome-flask
+634,awesome-pyramid
+635,sanic
+636,tornado
+637,turbogears
+638,web2py
+639,github
+640,autobahnpython
+641,crossbar
+642,django-socketio
+643,websocket-for-python
+644,javascript
+645,php
+646,c#
+647,c++
+648,ruby
+649,css
+650,c
+651,objective-c
+652,shell
+653,scala
+654,swift
+655,matlab
+656,clojure
+657,octave
+658,machine learning
+659,data analytics
+660,predictive analytics
+661,html
+662,js
+663,accounts payable
+664,receivables
+665,inventory controls
+666,payroll
+667,deposits
+668,bank reconciliation
+669,planning and enacting cash-flows
+670,report preparation
+671,financial models
+672,financial controls
+673,documentation
+674,time management
+675,schedules
+676,benchmarking
+677,future state assessment
+678,business process re-engineering
+679,as-is analysis
+680,defining solutions and scope
+681,gap analysis
+682,role change
+683,wireframing
+684,prototyping
+685,user stories
+686,financial analysis/modeling
+687,swot analysis
+688,quickbooks
+689,quicken
+690,erp
+691,enterprise resource planning
+692,spanish
+693,german
+694,rest
+695,soap
+696,json
+697,website
+698,ui
+699,ux
+700,design
+701,crm
+702,cms
+703,communication
+704,coding
+705,windows
+706,servers
+707,unix
+708,linux
+709,redhat
+710,solaris
+711,java
+712,perl
+713,vb script
+714,xml
+715,database
+716,oracle
+717,microsoft sql
+718,sql
+719,microsoft word
+720,microsoft powerpoint
+721,powerpoint
+722,word
+723,excel
+724,visio
+725,microsoft visio
+726,microsoft excel
+727,adobe
+728,photoshop
+729,hadoop
+730,hbase
+731,hive
+732,zookeeper
+733,openserver
+734,auto cad
+735,pl/sql
+736,ruby on rails
+737,asp
+738,jsp
+739,operations
+740,technical
+741,training
+742,sales
+743,marketing
+744,reporting
+745,compliance
+746,strategy
+747,research
+748,analytical
+749,engineering
+750,policies
+751,budget
+752,finance
+753,project management
+754,health
+755,customer service
+756,content
+757,presentation
+758,brand
+759,presentations
+760,safety
+761,certification
+762,seo
+763,digital marketing
+764,accounting
+765,regulations
+766,legal
+767,engagement
+768,analytics
+769,distribution
+770,coaching
+771,testing
+772,vendors
+773,consulting
+774,writing
+775,contracts
+776,inventory
+777,retail
+778,healthcare
+779,regulatory
+780,scheduling
+781,construction
+782,logistics
+783,mobile
+784,c�(programming language)
+785,correspondence
+786,controls
+787,human resources
+788,specifications
+789,recruitment
+790,procurement
+791,partnership
+792,partnerships
+793,management experience
+794,negotiation
+795,hardware
+796,programming
+797,agile
+798,forecasting
+799,advertising
+800,business development
+801,audit
+802,architecture
+803,supply chain
+804,governance
+805,staffing
+806,continuous improvement
+807,product development
+808,networking
+809,recruiting
+810,product management
+811,sap
+812,troubleshooting
+813,computer science
+814,budgeting
+815,electrical
+816,customer experience
+817,economics
+818,information technology
+819,transportation
+820,social media
+821,automation
+822,lifecycle
+823,filing
+824,modeling
+825,investigation
+826,editing
+827,purchasing
+828,kpis
+829,hospital
+830,forecasts
+831,acquisition
+832,expenses
+833,billing
+834,workflow
+835,product owner
+836,analyze
+837,cross functional
+838,business process
+839,process
+840,improvement
+841,pivot tables
+842,pivot
+843,vlookups
+844,sharepoint
+845,microsoft sharepoint
+846,access database
+847,access
+848,test case
+849,jira
+850,tfs
+851,hp alm
+852,tableau
+853,business object
+854,business intelligence
+855,jad
+856,solicitation
+857,kaban
+858,vue.js
+859,sketch
+860,indesign
+861,illustrator
+862,english
+863,french
+864,active directory
+865,data center
+866,solution architecture
+867,dns
+868,network design
+869,open source
+870,desktop support
+871,application support
+872,administration
+873,change management
+874,video
+875,invoices
+876,administrative support
+877,payments
+878,lean
+879,process improvement
+880,installation
+881,risk management
+882,transactions
+883,investigations
+884,r (programming language)
+885,data analysis
+886,statistics
+887,protocols
+888,program management
+889,quality assurance
+890,banking
+891,outreach
+892,sourcing
+893,microsoft office
+894,merchandising
+895,r
+896,teaching
+897,pharmaceutical
+898,fulfillment
+899,positioning
+900,tax
+901,service delivery
+902,investigate
+903,editorial
+904,account management
+905,valid drivers license
+906,electronics
+907,pr
+908,public relations
+909,assembly
+910,facebook
+911,spreadsheets
+912,recruit
+913,proposal
+914,data entry
+915,hotel
+916,ordering
+917,branding
+918,life cycle
+919,real estate
+920,relationship management
+921,researching
+922,process improvements
+923,chemistry
+924,saas
+925,cad
+926,sales experience
+927,mathematics
+928,customer-facing
+929,audio
+930,project management skills
+931,six sigma
+932,hospitality
+933,mechanical engineering
+934,auditing
+935,employee relations
+936,android
+937,security clearance
+938,licensing
+939,fundraising
+940,repairs
+941,iso
+942,market research
+943,business strategy
+944,pmp
+945,data management
+946,quality control
+947,reconciliation
+948,conversion
+949,business analysis
+950,financial analysis
+951,ecommerce
+952,client service
+953,publishing
+954,supervising
+955,complex projects
+956,key performance indicators
+957,scrum
+958,sports
+959,e-commerce
+960,journalism
+961,d (programming language)
+962,data collection
+963,higher education
+964,marketing programs
+965,financial management
+966,business plans
+967,user experience
+968,client relationships
+969,cloud
+970,analytical skills
+971,cisco
+972,internal stakeholders
+973,product marketing
+974,regulatory requirements
+975,itil
+976,information security
+977,aviation
+978,supply chain management
+979,industry experience
+980,autocad
+981,purchase orders
+982,acquisitions
+983,tv
+984,instrumentation
+985,strategic direction
+986,law enforcement
+987,call center
+988,experiments
+989,technical skills.1
+990,human resource
+991,business cases
+992,build relationships
+993,invoicing
+994,support services
+995,marketing strategy
+996,operating systems
+997,biology
+998,start-up
+999,electrical engineering
+1000,workflows
+1001,routing
+1002,non-profit
+1003,marketing plans
+1004,due diligence
+1005,business management
+1006,iphone
+1007,architectures
+1008,reconcile
+1009,dynamic environment
+1010,external partners
+1011,asset management
+1012,emea
+1013,intranet
+1014,sops
+1015,sas
+1016,digital media
+1017,prospecting
+1018,financial reporting
+1019,project delivery
+1020,operational excellence
+1021,standard operating procedures
+1022,technical knowledge
+1023,on-call
+1024,talent management
+1025,stakeholder management
+1026,tablets
+1027,analyze data
+1028,financial statements
+1029,microsoft office suite
+1030,fitness
+1031,case management
+1032,value proposition
+1033,industry trends
+1034,rfp
+1035,broadcast
+1036,portfolio management
+1037,fabrication
+1038,financial performance
+1039,customer requirements
+1040,psychology
+1041,marketing materials
+1042,resource management
+1043,physics
+1044,mortgage
+1045,development activities
+1046,end user
+1047,business planning
+1048,root cause
+1049,analysis
+1050,leadership development
+1051,relationship building
+1052,sdlc
+1053,on-boarding
+1054,quality standards
+1055,regulatory compliance
+1056,aws
+1057,kpi
+1058,status reports
+1059,product line
+1060,drafting
+1061,phone calls
+1062,product knowledge
+1063,business stakeholders
+1064,technical issues
+1065,admissions
+1066,supervisory experience
+1067,usability
+1068,pharmacy
+1069,commissioning
+1070,project plan
+1071,ms excel
+1072,fda
+1073,test plans
+1074,variances
+1075,financing
+1076,travel arrangements
+1077,internal customers
+1078,medical device
+1079,counsel
+1080,inventory management
+1081,performance metrics
+1082,lighting
+1083,outsourcing
+1084,performance improvement
+1085,management consulting
+1086,graphic design
+1087,transport
+1088,information management
+1089,.net
+1090,startup
+1091,matrix
+1092,front-end
+1093,project planning
+1094,business systems
+1095,accounts receivable
+1096,public health
+1097,hris
+1098,instructional design
+1099,in-store
+1100,employee engagement
+1101,cost effective
+1102,sales management
+1103,api
+1104,adobe creative suite
+1105,twitter
+1106,program development
+1107,event planning
+1108,cash flow
+1109,strategic plans
+1110,vendor management
+1111,trade shows
+1112,hotels
+1113,segmentation
+1114,contract management
+1115,gis
+1116,talent acquisition
+1117,photography
+1118,internal communications
+1119,client services
+1120,ibm
+1121,financial reports
+1122,product quality
+1123,beverage
+1124,strong analytical skills
+1125,underwriting
+1126,cpr
+1127,mining
+1128,sales goals
+1129,chemicals
+1130,scripting
+1131,migration
+1132,software engineering
+1133,mis
+1134,therapeutic
+1135,general ledger
+1136,ms project
+1137,standardization
+1138,retention
+1139,spelling
+1140,media relations
+1141,os
+1142,daily operations
+1143,immigration
+1144,product design
+1145,etl
+1146,field sales
+1147,driving record
+1148,peoplesoft
+1149,benchmark
+1150,quality management
+1151,apis
+1152,test cases
+1153,internal controls
+1154,telecom
+1155,business issues
+1156,research projects
+1157,data quality
+1158,strategic initiatives
+1159,office software
+1160,cfa
+1161,co-op
+1162,big data
+1163,journal entries
+1164,vmware
+1165,help desk
+1166,statistical analysis
+1167,datasets
+1168,alliances
+1169,solidworks
+1170,prototype
+1171,lan
+1172,sci
+1173,budget management
+1174,rfps
+1175,flex
+1176,gaap
+1177,experimental
+1178,cpg
+1179,information system
+1180,customer facing
+1181,process development
+1182,web services
+1183,international
+1184,travel
+1185,revenue growth
+1186,software development life cycle
+1187,operations management
+1188,computer applications
+1189,risk assessments
+1190,sales operations
+1191,raw materials
+1192,internal audit
+1193,physical security
+1194,sql server
+1195,affiliate
+1196,computer software
+1197,manage projects
+1198,business continuity
+1199,litigation
+1200,it infrastructure
+1201,cost reduction
+1202,small business
+1203,annual budget
+1204,ios
+1205,html5
+1206,real-time
+1207,consulting experience
+1208,circuits
+1209,risk assessment
+1210,cross-functional team
+1211,public policy
+1212,analyzing data
+1213,consulting services
+1214,google drive
+1215,ad words
+1216,pay per click
+1217,email
+1218,db2
+1219,expense tracking
+1220,reports
+1221,wordpress
+1222,yoast
+1223,ghostwriting
+1224,corel draw
+1225,automated billing
+1226,system
+1227,customer management
+1228,debugging
+1229,system administration
+1230,network configuration
+1231,software installation
+1232,security
+1233,tech support
+1234,updates
+1235,tci/ip
+1236,dhcp
+1237,wan/lan
+1238,ubuntu
+1239,virtualized networks
+1240,network automation
+1241,cloud management
+1242,ai
+1243,salesforce
+1244,mango db
+1245,math
+1246,calculus
+1247,product launch
+1248,mvp

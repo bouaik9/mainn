@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="{% static 'css/chart.css' %}">
+<section>
+    <div class="chart-type" >
+        <ul>
+            <li><button id="barButton">Bar</button></li>
+            <li><button id="pieButton">Pie</button></li>
+            <li><button id="polarButton">polarArea</button></li>
+
+        </ul>
+    </div>
+    <div class="chart">
+        <canvas id="expenseChart"></canvas>
+    </div>
+</section>
+</body>
+</html>

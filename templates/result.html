@@ -1,0 +1,125 @@
+{%extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+
+
+<title>Log in</title>
+	{% endblock %}
+
+{% block content %}
+   <link rel="stylesheet" href="{% static 'result.css' %}">     
+
+  <h1 style="margin-left: 30px;" id="heading">Named Entities</h1>
+
+  <div class="entities-container" id="{{id}}">
+    
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">First name</span>
+        </div>
+        <h2 id="name">{{ person.name }}</h2>
+        <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'name')">
+      </div>
+
+
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">Email</span>
+        </div>
+        <h2 id="email">{{ person.email }}</h2>
+        <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'email')">
+      </div>
+
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">Phone number</span>
+        </div>
+        <h2 id="phone">{{ person.phone }}</h2>
+        <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'phone')">
+      </div>
+
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">Skills</span>
+        </div>
+          <h2 id="skills">{{ person.skills }}</h2>
+     
+          <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'skills')">
+        </div>
+
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">Experience</span>
+        </div>
+        <h2 id="experience">{{ person.experience }}</h2>
+        <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'experience')">
+      </div>
+
+      <div class="entity-category">
+        <div class="entity-tags">
+            <span class="entity-tag">Education</span>
+        </div>
+        <h2 id="education">{{ person.education }}</h2>
+        <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'education')">
+      </div>
+
+
+  </div>
+
+  <script>
+    function editField(element, field) {
+  var currentValue = element.previousElementSibling.textContent;
+  element.previousElementSibling.innerHTML = '<input type="text" value="' + currentValue + '" style="border: 2px; padding: 10px;">';
+  element.src = "{% static 'submit_button.png' %}";
+  element.onclick = function() { submitField(element, field); };
+}
+
+function submitField(element, field) {
+  var newValue = element.previousElementSibling.firstElementChild.value;
+  element.previousElementSibling.textContent = newValue;
+  element.src = "{% static 'modify_icon.png' %}";
+  element.onclick = function() { editField(element, field); };
+  let id = document.querySelector(".entities-container").getAttribute("id");
+
+  console.log(newValue);
+  fetch("/cv/" + id + "/" + field + "/", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFToken': getCookie('csrftoken')  // Assuming you're using Django and need CSRF token
+    },
+    body: JSON.stringify({
+      field: newValue
+    })
+  });
+
+  // Optionally, you can make an AJAX call here to update the server with the new value
+}
+
+// Attach the editField function to each edit icon with the specific field it is meant to edit
+document.querySelectorAll('.edit-icon').forEach(function(icon) {
+  var field = icon.previousElementSibling.getAttribute("id");
+  icon.onclick = function() { editField(icon, field); };
+});
+
+
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+  </script>
+
+
+{% endblock %}
