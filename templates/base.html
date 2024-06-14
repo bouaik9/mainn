@@ -12,9 +12,9 @@
 <body>
     <nav>
         <ul>
-            <li><a class="ulinks" href="/cv/dashboard/">Dashboard</a></li>
-            <li><a class="ulinks" href="/cv/upload/">Upload</a></li>
-            <li><a class="ulinks" href="/cv/all/">View Resumes</a></li>
+            <li><a class="ulinks" href="/">Dashboard</a></li>
+            <li><a class="ulinks" href="/upload/">Upload</a></li>
+            <li><a class="ulinks" href="/all/">View Resumes</a></li>
         </ul>
         {% if request.session.authenticated %}
         <button class="log"><a href="{% url 'logout' %}">Log Out</a></button>
