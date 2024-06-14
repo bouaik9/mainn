@@ -120,7 +120,6 @@ def get_skills(request):
 
 
     json_data = json.dumps(serialized_data)
-    print(json_data)
 
     return JsonResponse(json_data, safe=False)
 
@@ -130,6 +129,8 @@ def get_skills(request):
 def upload_file(request):
     if not request.user.is_authenticated:return redirect("login")
 
+    if not request.user.is_admin:
+        return render(request, 'not-admin.html')
     if request.method == 'POST':
         files = request.FILES.getlist('files[]')
         if files:
@@ -141,7 +142,7 @@ def upload_file(request):
             for file in files:
                 new = UploadedFile(file=file)
                 new.save()
-            return HttpResponse('Files uploaded successfully!')
+            return render(request, 'uploaded-success.html')
         else:
             return HttpResponse('No files uploaded.', status=400)
     return render(request, 'upload.html')
@@ -176,7 +177,7 @@ def all_resume(request):
 def get_one_resume(request, id):
     if request.user.is_authenticated:
       person = Person.objects.filter(id=id).get()
-      return render(request, 'result.html', context={"person":person, "id": person.id})
+      return render(request, 'result.html', context={"person":person, "id": person.id, "user_is_admin":request.user.is_admin})
     return redirect('login')
 
 

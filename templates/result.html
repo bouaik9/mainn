@@ -19,7 +19,13 @@
             <span class="entity-tag">First name</span>
         </div>
         <h2 id="name">{{ person.name }}</h2>
+        
+        {% if user_is_admin %}
         <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'name')">
+        {% else %}
+        <div></div>
+        {% endif %}
+        
       </div>
 
 
@@ -28,7 +34,11 @@
             <span class="entity-tag">Email</span>
         </div>
         <h2 id="email">{{ person.email }}</h2>
+        {% if user_is_admin %}
         <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'email')">
+        {% else %}
+        <div></div>
+        {% endif %}
       </div>
 
       <div class="entity-category">
@@ -36,7 +46,11 @@
             <span class="entity-tag">Phone number</span>
         </div>
         <h2 id="phone">{{ person.phone }}</h2>
+        {% if user_is_admin %}
         <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'phone')">
+        {% else %}
+        <div></div>
+        {% endif %}
       </div>
 
       <div class="entity-category">
@@ -45,7 +59,11 @@
         </div>
           <h2 id="skills">{{ person.skills }}</h2>
      
+          {% if user_is_admin %}
           <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'skills')">
+          {% else %}
+          <div></div>
+          {% endif %}
         </div>
 
       <div class="entity-category">
@@ -53,7 +71,11 @@
             <span class="entity-tag">Experience</span>
         </div>
         <h2 id="experience">{{ person.experience }}</h2>
+        {% if user_is_admin %}
         <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'experience')">
+        {% else %}
+        <div></div>
+        {% endif %}
       </div>
 
       <div class="entity-category">
@@ -61,7 +83,11 @@
             <span class="entity-tag">Education</span>
         </div>
         <h2 id="education">{{ person.education }}</h2>
+        {% if user_is_admin %}
         <img src="{% static 'modify_icon.png' %}" alt="Edit" class="edit-icon" onclick="editField(this, 'education')">
+        {% else %}
+        <div></div>
+        {% endif %}
       </div>
 
 
